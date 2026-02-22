@@ -1,0 +1,1252 @@
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Montserrat-Regular"), url("fonts/Montserrat-Regular.html") format("woff2")
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Montserrat-Bold"), url("fonts/Montserrat-Bold.html") format("woff2")
+}
+
+@font-face {
+    font-family: "Kaushan Script";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Kaushan Script"), local("KaushanScript-Regular"), url("fonts/KaushanScript-Regular.html") format("woff2")
+}
+
+@font-face {
+    font-family: "Droid Serif";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Droid Serif"), local("DroidSerif"), url("fonts/DroidSerif.html") format("woff2")
+}
+
+@font-face {
+    font-family: "Droid Serif";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Droid Serif Bold"), local("DroidSerif-Bold"), url("fonts/DroidSerif-Bold.html") format("woff2")
+}
+
+@font-face {
+    font-family: "Droid Serif";
+    font-style: italic;
+    font-weight: 400;
+    src: local("Droid Serif Italic"), local("DroidSerif-Italic"), url("fonts/DroidSerif-Italic.html") format("woff2")
+}
+
+@font-face {
+    font-family: "Droid Serif";
+    font-style: italic;
+    font-weight: 700;
+    src: local("Droid Serif Bold Italic"), local("DroidSerif-BoldItalic"), url("fonts/DroidSerif-BoldItalic.html") format("woff2")
+}
+
+@font-face {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 100;
+    src: local("Roboto Slab Thin"), url("fonts/RobotoSlab-Thin.html") format("woff2")
+}
+
+@font-face {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Roboto Slab Light"), url("fonts/RobotoSlab-Light.html") format("woff2")
+}
+
+@font-face {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Roboto Slab Regular"), url("fonts/RobotoSlab-Regular.html") format("woff2")
+}
+
+@font-face {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Roboto Slab Bold"), url("fonts/RobotoSlab-Bold.html") format("woff2")
+}
+
+.btn-primary.active,
+.btn-primary:active,
+.btn-xl.active,
+.btn-xl:active,
+.open .dropdown-toggle.btn-primary,
+.open .dropdown-toggle.btn-xl {
+    background-image: none
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    webkit-tap-highlight-color: #fff;
+}
+
+.btn-primary,
+.btn-xl,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700
+}
+
+.text-muted {
+    color: #777
+}
+
+.text-primary,
+a {
+    color: #EBC003;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.75
+}
+
+p.large {
+    font-size: 16px
+}
+
+a,
+a.active,
+a:active,
+a:focus,
+a:hover {
+    outline: 0
+}
+
+a.active,
+a:active,
+a:focus,
+a:hover {
+    color: #0A6B26 ;
+}
+
+.img-centered {
+    margin: 0 auto
+}
+
+.bg-light-gray {
+    background-color: #eee
+}
+
+.bg-darkest-gray {
+    background-color: #222
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #fed136;
+    border-color: #fed136
+}
+
+.btn-primary.active,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover,
+.open .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #fec503;
+    border-color: #f6bf01
+}
+
+.btn-primary.disabled,
+.btn-primary.disabled.active,
+.btn-primary.disabled:active,
+.btn-primary.disabled:focus,
+.btn-primary.disabled:hover,
+.btn-primary[disabled],
+.btn-primary[disabled].active,
+.btn-primary[disabled]:active,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary,
+fieldset[disabled] .btn-primary.active,
+fieldset[disabled] .btn-primary:active,
+fieldset[disabled] .btn-primary:focus,
+fieldset[disabled] .btn-primary:hover {
+    background-color: #fed136;
+    border-color: #fed136
+}
+
+.btn-primary .badge {
+    color: #FFFFFF;
+    background-color: #fff
+}
+
+.btn-xl {
+    color: #fff;
+    background-color: #fed136;
+    border-color: #fed136;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 20px 40px
+}
+
+.btn-xl.active,
+.btn-xl:active,
+.btn-xl:focus,
+.btn-xl:hover,
+.open .dropdown-toggle.btn-xl {
+    color: #fff;
+    background-color: #fec503;
+    border-color: #f6bf01
+}
+
+.btn-xl.disabled,
+.btn-xl.disabled.active,
+.btn-xl.disabled:active,
+.btn-xl.disabled:focus,
+.btn-xl.disabled:hover,
+.btn-xl[disabled],
+.btn-xl[disabled].active,
+.btn-xl[disabled]:active,
+.btn-xl[disabled]:focus,
+.btn-xl[disabled]:hover,
+fieldset[disabled] .btn-xl,
+fieldset[disabled] .btn-xl.active,
+fieldset[disabled] .btn-xl:active,
+fieldset[disabled] .btn-xl:focus,
+fieldset[disabled] .btn-xl:hover {
+    background-color: #fed136;
+    border-color: #fed136
+}
+
+.btn-xl .badge {
+    color: #fed136;
+    background-color: #fff
+}
+
+.navbar-custom {
+    background-color: #133813;
+    border-color: transparent
+}
+
+.navbar-custom .navbar-brand {
+   padding: 5px 5px; /* Ajusta o espaçamento interno */
+    height: auto;
+}
+
+.navbar-custom .navbar-brand.active,
+.navbar-custom .navbar-brand:active,
+.navbar-custom .navbar-brand:focus,
+.navbar-custom .navbar-brand:hover {
+    color: #EBC003
+}
+
+.navbar-custom .nav li a,
+.navbar-custom .navbar-toggle {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    text-transform: uppercase
+}
+
+.navbar-custom .navbar-collapse {
+    border-color: rgba(255, 255, 255, .02)
+}
+
+.navbar-custom .navbar-toggle {
+    background-color: #fed136;
+    border-color: #fed136;
+    font-size: 12px
+}
+
+.navbar-custom .navbar-toggle:focus,
+.navbar-custom .navbar-toggle:hover {
+    background-color: #133813;
+}
+
+.navbar-custom .nav li a {
+    font-weight: 400;
+    letter-spacing: 1px;
+    
+}
+
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:hover {
+    color: #41B541;
+    outline: 0
+}
+
+.navbar-custom .navbar-nav>.active>a {
+    border-radius: 0;
+    color: #fff;
+    background-color: #fed136
+}
+
+.navbar-custom .navbar-nav>.active>a:focus,
+.navbar-custom .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #fec503
+}
+.logo-nav {
+    max-height: 50px; /* Controla o tamanho do logo */
+    width: auto;
+    display: inline-block;
+    transition: all 0.3s;
+    margin-top: 0; /* Ajusta o alinhamento vertical */
+}
+
+@media (min-width:768px) {
+    .navbar-custom {
+        background-color: transparent;
+        padding: 25px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+        border: none
+    }
+
+    .navbar-custom .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s
+    }
+
+    .navbar-custom .navbar-nav>.active>a {
+        border-radius: 3px
+    }
+
+    .navbar-custom.affix {
+        background-color: #133813;
+        padding: 10px 0
+    }
+
+    .navbar-custom.affix .navbar-brand {
+        font-size: 1.5em
+    }
+}
+
+header {
+    background-image: url(../img/Headerbg1.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+    color: #fff
+}
+
+header .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px
+}
+
+header .intro-text .intro-lead-in {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 25px
+}
+
+header .intro-text .intro-heading {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 25px
+}
+
+@media (min-width:768px) {
+    header .intro-text {
+        padding-top: 300px;
+        padding-bottom: 200px
+    }
+
+    header .intro-text .intro-lead-in {
+        font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-style: italic;
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 25px
+    }
+
+    header .intro-text .intro-heading {
+        font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 75px;
+        line-height: 75px;
+        margin-bottom: 50px
+    }
+}
+
+#portfolio .portfolio-item .portfolio-caption p,
+section h3.section-subheading {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic
+}
+
+section {
+    padding: 100px 0
+}
+
+section h2.section-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px
+}
+
+section h3.section-subheading {
+    font-size: 16px;
+    text-transform: none;
+    font-weight: 400;
+    margin-bottom: 75px
+}
+
+@media (min-width:768px) {
+    section {
+        padding: 150px 0
+    }
+}
+
+.service-heading {
+    margin: 15px 0;
+    text-transform: none
+}
+
+#portfolio .portfolio-item {
+    margin: 0 0 15px;
+    right: 0
+}
+
+#portfolio .portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    background: rgba(254, 209, 54, .9);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+    opacity: 1
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+    top: 50%;
+    margin-top: -12px;
+    color: #fff
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+    margin-top: -12px
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+    margin: 0
+}
+
+#portfolio .portfolio-item .portfolio-caption {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    text-align: center;
+    padding: 25px
+}
+
+#portfolio .portfolio-item .portfolio-caption h4 {
+    text-transform: none;
+    margin: 0
+}
+
+#portfolio .portfolio-item .portfolio-caption p {
+    font-size: 16px;
+    margin: 0
+}
+
+footer span.copyright,
+footer ul.quicklinks {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
+#portfolio * {
+    z-index: 2
+}
+
+@media (min-width:767px) {
+    #portfolio .portfolio-item {
+        margin: 0 0 30px
+    }
+}
+
+.timeline {
+    list-style: none;
+    padding: 0;
+    position: relative
+}
+
+.timeline:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: "";
+    width: 2px;
+    background-color: #f1f1f1;
+    left: 40px;
+    margin-left: -1.5px
+}
+
+.timeline>li {
+    margin-bottom: 50px;
+    position: relative;
+    min-height: 50px
+}
+
+.timeline>li:after,
+.timeline>li:before {
+    content: "";
+    display: table
+}
+
+.timeline>li:after {
+    clear: both
+}
+
+.timeline>li .timeline-panel {
+    width: 100%;
+    float: right;
+    padding: 0 20px 0 100px;
+    position: relative;
+    text-align: left
+}
+
+.timeline>li .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto
+}
+
+.timeline>li .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto
+}
+
+.timeline>li .timeline-image {
+    left: 0;
+    margin-left: 0;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    z-index: 100;
+    background-color: #fed136;
+    color: #fff;
+    border-radius: 100%;
+    border: 7px solid #f1f1f1;
+    text-align: center
+}
+
+.timeline>li .timeline-image h4 {
+    font-size: 10px;
+    margin-top: 12px;
+    line-height: 14px
+}
+
+.timeline>li.timeline-inverted>.timeline-panel {
+    float: right;
+    text-align: left;
+    padding: 0 20px 0 100px
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto
+}
+
+.timeline>li:last-child {
+    margin-bottom: 0
+}
+
+.timeline .timeline-heading h4 {
+    margin-top: 0;
+    color: inherit
+}
+
+.timeline .timeline-heading h4.subheading {
+    text-transform: none
+}
+
+.timeline .timeline-body>p,
+.timeline .timeline-body>ul {
+    margin-bottom: 0
+}
+
+@media (min-width:768px) {
+    .timeline:before {
+        left: 50%
+    }
+
+    .timeline>li {
+        margin-bottom: 100px;
+        min-height: 100px
+    }
+
+    .timeline>li .timeline-panel {
+        width: 41%;
+        float: left;
+        padding: 0 20px 20px 30px;
+        text-align: right
+    }
+
+    .timeline>li .timeline-image {
+        width: 100px;
+        height: 100px;
+        left: 50%;
+        margin-left: -50px
+    }
+
+    .timeline>li .timeline-image h4 {
+        font-size: 13px;
+        margin-top: 16px;
+        line-height: 18px
+    }
+
+    .timeline>li.timeline-inverted>.timeline-panel {
+        float: right;
+        text-align: left;
+        padding: 0 30px 20px 20px
+    }
+}
+
+@media (min-width:992px) {
+
+    .timeline>li .timeline-panel,
+    .timeline>li.timeline-inverted>.timeline-panel {
+        padding: 0 20px 20px
+    }
+
+    .timeline>li {
+        min-height: 150px
+    }
+
+    .timeline>li .timeline-image {
+        width: 150px;
+        height: 150px;
+        margin-left: -75px
+    }
+
+    .timeline>li .timeline-image h4 {
+        font-size: 18px;
+        margin-top: 30px;
+        line-height: 26px
+    }
+}
+
+@media (min-width:1200px) {
+    .timeline>li {
+        min-height: 170px
+    }
+
+    .timeline>li .timeline-panel {
+        padding: 0 20px 20px 100px
+    }
+
+    .timeline>li .timeline-image {
+        width: 170px;
+        height: 170px;
+        margin-left: -85px
+    }
+
+    .timeline>li .timeline-image h4 {
+        margin-top: 40px
+    }
+
+    .timeline>li.timeline-inverted>.timeline-panel {
+        padding: 0 100px 20px 20px
+    }
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 50px
+}
+
+.team-member img {
+    margin: 0 auto;
+    border: 7px solid #fff
+}
+
+.team-member h4 {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: none
+}
+
+.team-member p {
+    margin-top: 0
+}
+
+aside.clients img {
+    margin: 50px auto
+}
+
+section#contact {
+    background-color: #222;
+    background-image: url(../img/map-image.png);
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+section#contact .section-heading {
+    color: #fff
+}
+
+section#contact .form-group {
+    margin-bottom: 25px
+}
+
+section#contact .form-group input,
+section#contact .form-group textarea {
+    padding: 20px
+}
+
+section#contact .form-group input.form-control {
+    height: auto
+}
+
+section#contact .form-group textarea.form-control {
+    height: 236px
+}
+
+section#contact .form-control:focus {
+    border-color: #fed136;
+    box-shadow: none
+}
+
+section#contact::-webkit-input-placeholder {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #eee
+}
+
+section#contact:-moz-placeholder {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #eee
+}
+
+section#contact::-moz-placeholder {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #eee
+}
+
+section#contact:-ms-input-placeholder {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #eee
+}
+
+section#contact .text-danger {
+    color: #e74c3c
+}
+/* Estilo do Rodapé Imperial */
+.footer-imperial {
+    background-color: #133813 !important; /* Verde Escuro da paleta */
+    padding: 70px 0 20px;
+    color: #fff;
+    border-top: 4px solid #EBC003; /* Linha de destaque em Dourado */
+}
+
+.footer-col {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.footer-logo {
+    max-height: 80px;
+    margin-bottom: 15px;
+}
+
+.footer-slogan {
+    font-size: 14px;
+    font-style: italic;
+    color: #EBC003; /* Dourado */
+}
+
+.footer-col h4 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links li a {
+    color: #eee !important;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links li a:hover {
+    color: #EBC003  /* Dourado no hover */
+}
+
+.footer-nif {
+    margin-top: 20px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Redes Sociais */
+ul.social-buttons li a {
+    background-color: #EBC003 ; /* Dourado */
+    color: #133813; /* Verde Escuro */
+}
+
+ul.social-buttons li a:hover {
+    background-color: #fff ;
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 12px;
+}
+ul.social-buttons {
+    margin-bottom: 0
+}
+
+ul.social-buttons li a {
+    display: block;
+    background-color: #222;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    color: #fff;
+    outline: 0;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s
+}
+
+ul.social-buttons li a:active,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:hover {
+    background-color: #fed136
+}
+
+.btn.active,
+.btn:active,
+.btn:active:focus,
+.btn:focus {
+    outline: 0
+}
+
+.portfolio-modal .modal-dialog {
+    margin: 0;
+    height: 100%;
+    width: auto
+}
+
+.portfolio-modal .modal-content {
+    border-radius: 0;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    min-height: 100%;
+    padding: 100px 0;
+    text-align: center
+}
+
+.portfolio-modal .modal-content h2 {
+    margin-bottom: 15px;
+    font-size: 3em
+}
+
+.portfolio-modal .modal-content p {
+    margin-bottom: 30px
+}
+
+.portfolio-modal .modal-content p.item-intro {
+    margin: 20px 0 30px;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 16px
+}
+
+.portfolio-modal .modal-content ul.list-inline {
+    margin-bottom: 30px;
+    margin-top: 0
+}
+
+.portfolio-modal .modal-content img {
+    margin-bottom: 30px
+}
+
+.portfolio-modal .close-modal {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    top: 25px;
+    right: 25px;
+    cursor: pointer
+}
+
+.portfolio-modal .close-modal:hover {
+    opacity: .3
+}
+
+.portfolio-modal .close-modal .lr {
+    height: 75px;
+    width: 1px;
+    margin-left: 35px;
+    background-color: #222;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    z-index: 1051
+}
+
+.portfolio-modal .close-modal .lr .rl {
+    height: 75px;
+    width: 1px;
+    background-color: #222;
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    z-index: 1052
+}
+
+.portfolio-modal .modal-backdrop {
+    opacity: 0;
+    display: none
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: #fed136
+}
+
+::selection {
+    text-shadow: none;
+    background: #fed136
+}
+
+img::selection {
+    background: 0 0
+}
+
+img::-moz-selection {
+    background: 0 0
+}
+
+/* Estilo Sobre Nós Moderno */
+#about-modern {
+    padding: 100px 0;
+    background-color: #f9f9f9; /* Um cinza bem leve como na imagem */
+}
+
+.display-flex-center {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Contentor da Imagem */
+.about-image-container {
+    position: relative;
+    padding-right: 20px;
+}
+
+.about-image-container img {
+    border-radius: 10px;
+    /* Ajuste para criar o efeito de "bloco" verde atrás da foto */
+    box-shadow: 15px 15px 0px #0A6B26; 
+}
+
+.experience-badge {
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    background-color: #EBC003; /* Dourado da paleta */
+    color: #133813; /* Verde Escuro */
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.experience-badge .number {
+    font-size: 40px;
+    font-weight: 700;
+    margin-right: 10px;
+    line-height: 1;
+}
+
+/* Tipografia */
+.custom-title {
+    color: #133813 !important;
+    margin-bottom: 5px !important;
+    text-align: left !important;
+}
+
+.modern-subheading {
+    color: #0A6B26;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+.modern-text {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* Itens de destaque */
+.about-features {
+    margin-bottom: 40px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center; /* Alinha o check com o meio do texto */
+    margin-bottom: 10px;
+}
+
+.feature-item i {
+    color: #EBC003;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+/* Botão Moderno */
+.btn-modern {
+    border-radius: 50px !important;
+    padding: 15px 35px !important;
+    transition: transform 0.3s ease;
+}
+
+.btn-modern:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(10, 107, 38, 0.2);
+}
+
+/* Mobile Ajustes */
+@media (max-width: 768px) {
+    .mb-sm-50 { margin-bottom: 50px; }
+    .custom-title { text-align: center !important; }
+    .modern-subheading { text-align: center; }
+}
+
+/* Seção Missão, Visão e Valores Moderna */
+#mva {
+    padding: 100px 0;
+}
+
+.mva-card {
+    padding: 40px 25px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+    border-bottom: 5px solid transparent;
+}
+
+.mva-card:hover {
+    transform: translateY(-10px);
+    border-bottom: 5px solid #EBC003; /* Destaque em Dourado no hover */
+}
+
+.mva-icon-container {
+    width: 80px;
+    height: 80px;
+    background-color: #0A6B26; /* Verde da paleta */
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    font-size: 30px;
+}
+
+.valores-list {
+    text-align: left;
+    display: inline-block;
+}
+
+.valores-list li {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #777;
+}
+
+.valores-list li i {
+    color: #EBC003; /* Checks em Dourado */
+    margin-right: 10px;
+}
+
+.service-heading {
+    color: #133813 !important; /* Verde Escuro para os títulos */
+    margin-bottom: 15px;
+}
+
+/* Customização da Seção Públicos */
+#publicos {
+    padding: 100px 0;
+}
+
+.text-verde-imperial {
+    color: #0A6B26 !important; /* Verde da paleta */
+}
+
+.publico-item {
+    padding: 20px;
+    background: transparent;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efeito ao passar o mouse: o ícone brilha em dourado */
+.publico-item:hover .fa-circle {
+    color: #EBC003 !important; /* Muda para Dourado no hover */
+}
+
+.publico-item:hover .service-heading {
+    color: #0A6B26 !important;
+}
+
+.publico-item p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 991px) {
+    .publico-item {
+        margin-bottom: 30px;
+    }
+}
+
+/* Customização da Seção de Contato */
+section#contact {
+    background-color: #133813 !important; /* Verde Ultra Escuro da paleta */
+    padding: 100px 0;
+}
+
+.contact-info-box {
+    color: #fff;
+    text-align: left;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.contact-item i {
+    color: #EBC003; /* Dourado nos ícones */
+    font-size: 24px;
+    margin-right: 20px;
+    margin-top: 5px;
+    width: 30px;
+    text-align: center;
+}
+
+.contact-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.budget-box {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 50px;
+    border: 2px dashed #EBC003;
+    border-radius: 20px;
+}
+
+/* Botão de Orçamento Especial */
+.btn-budget {
+    background-color: #EBC003 !important;
+    border-color: #EBC003 !important;
+    color: #133813 !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 50px !important;
+    padding: 20px 50px !important;
+    transition: all 0.3s ease;
+}
+
+.btn-budget:hover {
+    background-color: #fff !important;
+    transform: scale(1.05);
+}
+
+/* Ajustes Mobile */
+@media (max-width: 768px) {
+    .contact-info-box { text-align: center; margin-bottom: 50px; }
+    .contact-item { flex-direction: column; align-items: center; }
+    .contact-item i { margin-right: 0; margin-bottom: 10px; }
+}
