@@ -1,79 +1,9 @@
-@font-face {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Montserrat-Regular"), url("fonts/Montserrat-Regular.html") format("woff2")
-}
 
-@font-face {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 700;
-    src: local("Montserrat-Bold"), url("fonts/Montserrat-Bold.html") format("woff2")
-}
+* MONTSERRAT - A fonte principal para Títulos (Corporate/Modern) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap');
 
-@font-face {
-    font-family: "Kaushan Script";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Kaushan Script"), local("KaushanScript-Regular"), url("fonts/KaushanScript-Regular.html") format("woff2")
-}
-
-@font-face {
-    font-family: "Droid Serif";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Droid Serif"), local("DroidSerif"), url("fonts/DroidSerif.html") format("woff2")
-}
-
-@font-face {
-    font-family: "Droid Serif";
-    font-style: normal;
-    font-weight: 700;
-    src: local("Droid Serif Bold"), local("DroidSerif-Bold"), url("fonts/DroidSerif-Bold.html") format("woff2")
-}
-
-@font-face {
-    font-family: "Droid Serif";
-    font-style: italic;
-    font-weight: 400;
-    src: local("Droid Serif Italic"), local("DroidSerif-Italic"), url("fonts/DroidSerif-Italic.html") format("woff2")
-}
-
-@font-face {
-    font-family: "Droid Serif";
-    font-style: italic;
-    font-weight: 700;
-    src: local("Droid Serif Bold Italic"), local("DroidSerif-BoldItalic"), url("fonts/DroidSerif-BoldItalic.html") format("woff2")
-}
-
-@font-face {
-    font-family: "Roboto Slab";
-    font-style: normal;
-    font-weight: 100;
-    src: local("Roboto Slab Thin"), url("fonts/RobotoSlab-Thin.html") format("woff2")
-}
-
-@font-face {
-    font-family: "Roboto Slab";
-    font-style: normal;
-    font-weight: 300;
-    src: local("Roboto Slab Light"), url("fonts/RobotoSlab-Light.html") format("woff2")
-}
-
-@font-face {
-    font-family: "Roboto Slab";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Roboto Slab Regular"), url("fonts/RobotoSlab-Regular.html") format("woff2")
-}
-
-@font-face {
-    font-family: "Roboto Slab";
-    font-style: normal;
-    font-weight: 700;
-    src: local("Roboto Slab Bold"), url("fonts/RobotoSlab-Bold.html") format("woff2")
-}
+/* INTER - A melhor fonte atual para leitura e interfaces modernas */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
 .btn-primary.active,
 .btn-primary:active,
@@ -89,7 +19,12 @@ body {
     font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
     webkit-tap-highlight-color: #fff;
 }
-
+h1, h2, h3, .navbar-brand, .btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em; /* Títulos modernos costumam ter letras levemente juntas */
+    text-transform: uppercase;
+}
 .btn-primary,
 .btn-xl,
 h1,
@@ -231,166 +166,201 @@ fieldset[disabled] .btn-xl:hover {
     background-color: #fff
 }
 
+/* --- Estilo Base da Nav --- */
 .navbar-custom {
-    background-color: #133813;
-    border-color: transparent
+    background-color: #133813; /* Verde escuro institucional */
+    border: none;
+    transition: all 0.4s ease-in-out;
 }
 
 .navbar-custom .navbar-brand {
-   padding: 5px 5px; /* Ajusta o espaçamento interno */
-    height: auto;
+    padding: 10px 0;
+    transition: transform 0.3s;
 }
 
-.navbar-custom .navbar-brand.active,
-.navbar-custom .navbar-brand:active,
-.navbar-custom .navbar-brand:focus,
-.navbar-custom .navbar-brand:hover {
-    color: #EBC003
-}
-
-.navbar-custom .nav li a,
-.navbar-custom .navbar-toggle {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #fff;
-    text-transform: uppercase
-}
-
-.navbar-custom .navbar-collapse {
-    border-color: rgba(255, 255, 255, .02)
-}
-
-.navbar-custom .navbar-toggle {
-    background-color: #fed136;
-    border-color: #fed136;
-    font-size: 12px
-}
-
-.navbar-custom .navbar-toggle:focus,
-.navbar-custom .navbar-toggle:hover {
-    background-color: #133813;
-}
-
+/* Links do Menu */
 .navbar-custom .nav li a {
-    font-weight: 400;
-    letter-spacing: 1px;
-    
+    font-family: "Montserrat", sans-serif;
+    color: rgba(255, 255, 255, 0.8) !important;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    padding: 25px 15px;
+    transition: color 0.3s, background 0.3s;
 }
 
+/* Hover e Link Ativo - Efeito Moderno */
+.navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus,
-.navbar-custom .nav li a:hover {
-    color: #41B541;
-    outline: 0
+.navbar-custom .navbar-nav > .active > a {
+    color: #EBC003 !important; /* Destaque em Amarelo */
+    background: transparent !important;
 }
 
-.navbar-custom .navbar-nav>.active>a {
-    border-radius: 0;
-    color: #fff;
-    background-color: #fed136
-}
-
-.navbar-custom .navbar-nav>.active>a:focus,
-.navbar-custom .navbar-nav>.active>a:hover {
-    color: #fff;
-    background-color: #fec503
-}
-.logo-nav {
-    max-height: 50px; /* Controla o tamanho do logo */
-    width: auto;
-    display: inline-block;
-    transition: all 0.3s;
-    margin-top: 0; /* Ajusta o alinhamento vertical */
-}
-
-@media (min-width:768px) {
+/* Versão Mobile (Abaixo de 767px) */
+@media (max-width: 767px) {
     .navbar-custom {
+        background-color: #133813 !important; /* Sempre escuro no mobile */
+        padding: 5px 0;
+    }
+    
+    .navbar-collapse {
+        background-color: rgba(19, 56, 19, 0.98);
+        border: none;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    
+    .navbar-custom .nav li a {
+        padding: 15px 20px;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+        text-align: center;
+    }
+
+    .navbar-custom .navbar-toggle {
         background-color: transparent;
-        padding: 25px 0;
-        -webkit-transition: padding .3s;
-        -moz-transition: padding .3s;
-        transition: padding .3s;
-        border: none
+        border: 1px solid #EBC003;
+        color: #EBC003;
+        font-size: 18px;
+        margin-top: 12px;
+    }
+    
+    .navbar-custom .navbar-toggle:hover,
+    .navbar-custom .navbar-toggle:focus {
+        background-color: #EBC003;
+        color: #133813;
+    }
+}
+
+/* Versão Desktop (Acima de 768px) */
+@media (min-width: 768px) {
+    .navbar-custom {
+        background-color: transparent; /* Transparente sobre o banner */
+        padding: 30px 0;
     }
 
-    .navbar-custom .navbar-brand {
-        font-size: 2em;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        transition: all .3s
-    }
-
-    .navbar-custom .navbar-nav>.active>a {
-        border-radius: 3px
-    }
-
+    /* Quando o usuário rolar a página (Classe .affix adicionada pelo JS) */
     .navbar-custom.affix {
         background-color: #133813;
-        padding: 10px 0
+        padding: 10px 0;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.3);
     }
 
-    .navbar-custom.affix .navbar-brand {
-        font-size: 1.5em
+    /* Efeito de linha embaixo do link no hover */
+    .navbar-custom .nav li a::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #EBC003;
+        transition: width .3s;
+        margin-top: 5px;
+    }
+
+    .navbar-custom .nav li a:hover::after {
+        width: 100%;
     }
 }
 
-header {
-    background-image: url(../img/Headerbg1.png);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
+.logo-nav {
+    max-height: 45px;
+    transition: all 0.3s;
+}
+
+.navbar-custom.affix .logo-nav {
+    max-height: 35px; /* Logo diminui levemente ao rolar */
+}
+
+/* --- Novo Layout Moderno --- */
+
+/* Configuração do Fundo Principal */
+.hero-header {
+    height: 100vh;
+    min-height: 650px;
+    background: url('../img/headerbg6.png') no-repeat center right; /* Sua imagem de caminhões e Luanda */
     background-size: cover;
-    -o-background-size: cover;
-    text-align: center;
-    color: #fff
+    display: flex;
+    align-items: center; /* Centraliza o bloco verticalmente */
+    position: relative;
 }
 
-header .intro-text {
-    padding-top: 100px;
-    padding-bottom: 50px
+/* O BLOCO DE ESCRITA (A caixa escura) */
+.hero-content-box {
+    background: rgba(0, 0, 0, 0.75); /* Um pouco mais escuro para maior contraste */
+    padding: 80px 60px; /* Aumentado significativamente o respiro interno */
+    max-width: 600px; /* Caixa mais larga para as letras não apertarem */
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+    text-align: left;
+    
+    /* Alinhamento à esquerda */
+    margin-left: -5%; /* Empurra a caixa para a esquerda do site */
+    margin-top: 5%; /* Pequeno ajuste para baixo */
+    box-shadow: 25px 0 50px rgba(0,0,0,0.3);
 }
 
-header .intro-text .intro-lead-in {
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: italic;
-    font-size: 22px;
-    line-height: 22px;
-    margin-bottom: 25px
-}
-
-header .intro-text .intro-heading {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
+/* Tipografia dentro do bloco */
+.intro-lead-in {
+    font-family: 'Montserrat', sans-serif;
+    color: #EBC003; /* Amarelo das suas cores */
     font-weight: 700;
-    font-size: 50px;
-    line-height: 50px;
-    margin-bottom: 25px
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
 }
 
-@media (min-width:768px) {
-    header .intro-text {
-        padding-top: 300px;
-        padding-bottom: 200px
-    }
-
-    header .intro-text .intro-lead-in {
-        font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-style: italic;
-        font-size: 40px;
-        line-height: 40px;
-        margin-bottom: 25px
-    }
-
-    header .intro-text .intro-heading {
-        font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 75px;
-        line-height: 75px;
-        margin-bottom: 50px
-    }
+.intro-heading {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
+.intro-heading span {
+    font-weight: 300; /* Parte mais fina do nome */
+    display: block;
+}
+
+.intro-subtext {
+    font-family: 'Inter', sans-serif;
+    color: rgba(255,255,255,0.9);
+    font-size: 18px;
+    margin-bottom: 35px;
+    line-height: 1.5;
+}
+
+/* Botão ajustado para as novas cores */
+.btn-corporate {
+    background-color: #EBC003;
+    color: #133813; /* Verde escuro das suas cores */
+    padding: 15px 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-corporate:hover {
+    background-color: #ffffff;
+    color: #133813;
+    transform: scale(1.05);
+}
+
+/* Responsividade para Celular */
+@media (max-width: 768px) {
+    .hero-content-box {
+        margin: 0 15px;
+        padding: 30px;
+        text-align: center;
+    }
+    .intro-heading { font-size: 35px; }
+}
 #portfolio .portfolio-item .portfolio-caption p,
 section h3.section-subheading {
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
