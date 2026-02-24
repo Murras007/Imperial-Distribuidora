@@ -1207,6 +1207,9 @@ section#contact {
     border-radius: 50px !important;
     padding: 20px 50px !important;
     transition: all 0.3s ease;
+    white-space: normal; /* Permite que o texto quebre linha se necessário */
+    display: inline-block;
+    max-width: 100%; /* Garante que o botão nunca seja maior que a tela */
 }
 
 .btn-budget:hover {
