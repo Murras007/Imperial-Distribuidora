@@ -1223,3 +1223,59 @@ section#contact {
     .contact-item { flex-direction: column; align-items: center; }
     .contact-item i { margin-right: 0; margin-bottom: 10px; }
 }
+.exchange-rates-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid #133813; /* Verde Escuro da paleta */
+}
+.exchange-title {
+    width: 100%;
+    text-align: center;     /* Garante que o texto dentro da div esteja no centro */
+    margin-bottom: 25px;    /* Espaço entre o título e as moedas */
+}
+
+.exchange-title h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #133813;
+    display: inline-block;
+    border-bottom: 2px solid #EBC003; /* Linha de destaque */
+    padding-bottom: 5px;
+}
+.rates-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;              /* Espaçamento entre cada moeda */
+    flex-wrap: wrap;
+    width: 100%;
+}
+.rate-card {
+    padding: 10px 30px;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.currency-name {
+    display: block;
+    color: #EBC003; /* Seu Dourado */
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.currency-value {
+    color: #0A6B26; /* Verde da paleta */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .rate-card { width: 50%; margin-bottom: 15px; }
+}
